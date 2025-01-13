@@ -31,9 +31,9 @@
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.button8 = new System.Windows.Forms.Button();
+			this.btnLogOut = new System.Windows.Forms.Button();
 			this.button7 = new System.Windows.Forms.Button();
-			this.button5 = new System.Windows.Forms.Button();
+			this.btnDashboardForm = new System.Windows.Forms.Button();
 			this.button6 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
@@ -84,9 +84,9 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
-			this.panel1.Controls.Add(this.button8);
+			this.panel1.Controls.Add(this.btnLogOut);
 			this.panel1.Controls.Add(this.button7);
-			this.panel1.Controls.Add(this.button5);
+			this.panel1.Controls.Add(this.btnDashboardForm);
 			this.panel1.Controls.Add(this.button6);
 			this.panel1.Controls.Add(this.button3);
 			this.panel1.Controls.Add(this.button4);
@@ -97,18 +97,19 @@
 			this.panel1.Size = new System.Drawing.Size(237, 640);
 			this.panel1.TabIndex = 7;
 			// 
-			// button8
+			// btnLogOut
 			// 
-			this.button8.BackColor = System.Drawing.Color.Transparent;
-			this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button8.Font = new System.Drawing.Font("Calibri", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button8.ForeColor = System.Drawing.Color.White;
-			this.button8.Location = new System.Drawing.Point(34, 426);
-			this.button8.Name = "button8";
-			this.button8.Size = new System.Drawing.Size(171, 51);
-			this.button8.TabIndex = 6;
-			this.button8.Text = "Çıkış Yap";
-			this.button8.UseVisualStyleBackColor = false;
+			this.btnLogOut.BackColor = System.Drawing.Color.Transparent;
+			this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnLogOut.Font = new System.Drawing.Font("Calibri", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnLogOut.ForeColor = System.Drawing.Color.White;
+			this.btnLogOut.Location = new System.Drawing.Point(34, 426);
+			this.btnLogOut.Name = "btnLogOut";
+			this.btnLogOut.Size = new System.Drawing.Size(171, 51);
+			this.btnLogOut.TabIndex = 6;
+			this.btnLogOut.Text = "Çıkış Yap";
+			this.btnLogOut.UseVisualStyleBackColor = false;
+			this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
 			// 
 			// button7
 			// 
@@ -123,18 +124,19 @@
 			this.button7.Text = "Ayarlar";
 			this.button7.UseVisualStyleBackColor = false;
 			// 
-			// button5
+			// btnDashboardForm
 			// 
-			this.button5.BackColor = System.Drawing.Color.Transparent;
-			this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button5.Font = new System.Drawing.Font("Calibri", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button5.ForeColor = System.Drawing.Color.White;
-			this.button5.Location = new System.Drawing.Point(33, 312);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(171, 51);
-			this.button5.TabIndex = 5;
-			this.button5.Text = "Dashboard";
-			this.button5.UseVisualStyleBackColor = false;
+			this.btnDashboardForm.BackColor = System.Drawing.Color.Transparent;
+			this.btnDashboardForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnDashboardForm.Font = new System.Drawing.Font("Calibri", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnDashboardForm.ForeColor = System.Drawing.Color.White;
+			this.btnDashboardForm.Location = new System.Drawing.Point(33, 312);
+			this.btnDashboardForm.Name = "btnDashboardForm";
+			this.btnDashboardForm.Size = new System.Drawing.Size(171, 51);
+			this.btnDashboardForm.TabIndex = 5;
+			this.btnDashboardForm.Text = "Dashboard";
+			this.btnDashboardForm.UseVisualStyleBackColor = false;
+			this.btnDashboardForm.Click += new System.EventHandler(this.btnDashboardForm_Click);
 			// 
 			// button6
 			// 
@@ -406,9 +408,9 @@
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.Button btnLogOut;
 		private System.Windows.Forms.Button button7;
-		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.Button btnDashboardForm;
 		private System.Windows.Forms.Button button6;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.Button button4;
